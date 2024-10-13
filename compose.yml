@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    volumes:
+      - type: bind
+        source: .
+        target: /app
+    ports:
+      - "8100:8100"
